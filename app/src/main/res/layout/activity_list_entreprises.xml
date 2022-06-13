@@ -6,4 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".ListEntreprises">
 
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lst"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
