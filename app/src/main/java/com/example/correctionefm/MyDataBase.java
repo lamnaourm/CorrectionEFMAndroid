@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class MyDataBase extends SQLiteOpenHelper {
 
     static String DB_NAME = "entreprise.db";
-    static String TB_NAME = "entreprise.db";
+    static String TB_NAME = "entreprise";
     static String COL1 = "ID";
     static String COL2 = "raisonSociale";
     static String COL3 = "adresse";
@@ -23,7 +23,7 @@ public class MyDataBase extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        String sql = "create table " + TB_NAME + "(" + COL1 + " interger primary key autoincrement," + COL2 + " text," + COL3 + " text," + COL4 + " double)";
+        String sql = "create table " + TB_NAME + "(" + COL1 + " integer  primary key autoincrement," + COL2 + " text," + COL3 + " text," + COL4 + " double)";
         sqLiteDatabase.execSQL(sql);
     }
 
