@@ -5,4 +5,7 @@
     <string name="btn2">Editer une entreprise</string>
     <string name="btn3">Liste de tous les entreprises</string>
 
+    <string name="btn1add">Enregistrer</string>
+    <string name="btn2add">Annuler</string>
+
 </resources>
