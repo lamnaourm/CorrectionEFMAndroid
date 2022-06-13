@@ -1,9 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".EditEntreprise">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp"/>
+
+    <EditText
+        android:layout_below="@id/sp"
+        android:id="@+id/editrs"
+        style="@style/styleED"
+        android:hint="Tapez votre raison sociale..." />
+
+    <EditText
+        android:id="@+id/editad"
+        style="@style/styleED"
+        android:layout_below="@id/editrs"
+        android:hint="Tapez votre adresse..." />
+
+    <EditText
+        android:id="@+id/editca"
+        style="@style/styleED"
+        android:layout_below="@id/editad"
+        android:hint="Tapez votre capital..." />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editca">
+
+        <Button
+            android:id="@+id/editb1"
+            style="@style/styleb"
+            android:text="@string/btn1Edit" />
+
+        <Button
+            android:id="@+id/editb2"
+            style="@style/styleb"
+            android:text="@string/btn2Edit" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -8,4 +8,7 @@
     <string name="btn1add">Enregistrer</string>
     <string name="btn2add">Annuler</string>
 
+    <string name="btn1Edit">Modifier</string>
+    <string name="btn2Edit">Supprimer</string>
+
 </resources>
